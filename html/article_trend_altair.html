@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-999f1aae933513ce966a5d4fee439bb8"}, "mark": {"type": "line", "point": true}, "encoding": {"tooltip": [{"field": "date", "type": "temporal"}, {"field": "count", "type": "quantitative"}], "x": {"field": "date", "title": "\ub0a0\uc9dc", "type": "temporal"}, "y": {"field": "count", "title": "\uae30\uc0ac \uc218", "type": "quantitative"}}, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-999f1aae933513ce966a5d4fee439bb8": [{"date": "2021-03-09T00:00:00", "count": 3}, {"date": "2025-06-25T00:00:00", "count": 1}, {"date": "2025-07-04T00:00:00", "count": 2}, {"date": "2025-07-08T00:00:00", "count": 1}, {"date": "2025-07-09T00:00:00", "count": 1}, {"date": "2025-07-10T00:00:00", "count": 1}, {"date": "2025-07-14T00:00:00", "count": 1}, {"date": "2025-07-15T00:00:00", "count": 1}, {"date": "2025-07-17T00:00:00", "count": 1}, {"date": "2025-07-20T00:00:00", "count": 1}, {"date": "2025-07-21T00:00:00", "count": 1}, {"date": "2025-07-22T00:00:00", "count": 2}, {"date": "2025-08-01T00:00:00", "count": 1}, {"date": "2025-08-03T00:00:00", "count": 1}, {"date": "2025-08-05T00:00:00", "count": 1}, {"date": "2025-08-06T00:00:00", "count": 1}, {"date": "2025-08-09T00:00:00", "count": 1}, {"date": "2025-08-11T00:00:00", "count": 5}, {"date": "2025-08-12T00:00:00", "count": 3}, {"date": "2025-08-14T00:00:00", "count": 1}, {"date": "2025-08-15T00:00:00", "count": 2}, {"date": "2025-08-16T00:00:00", "count": 1}, {"date": "2025-08-17T00:00:00", "count": 1}, {"date": "2025-08-18T00:00:00", "count": 3}, {"date": "2025-08-20T00:00:00", "count": 16}, {"date": "2025-08-21T00:00:00", "count": 4}, {"date": "2025-08-22T00:00:00", "count": 1}, {"date": "2025-08-23T00:00:00", "count": 2}, {"date": "2025-08-27T00:00:00", "count": 2}, {"date": "2025-08-28T00:00:00", "count": 1}, {"date": "2025-08-29T00:00:00", "count": 1}, {"date": "2025-08-30T00:00:00", "count": 1}, {"date": "2025-08-31T00:00:00", "count": 1}, {"date": "2025-09-01T00:00:00", "count": 2}, {"date": "2025-09-02T00:00:00", "count": 2}, {"date": "2025-09-03T00:00:00", "count": 2}, {"date": "2025-09-04T00:00:00", "count": 2}, {"date": "2025-09-05T00:00:00", "count": 1}, {"date": "2025-09-06T00:00:00", "count": 1}, {"date": "2025-09-07T00:00:00", "count": 2}, {"date": "2025-09-09T00:00:00", "count": 1}, {"date": "2025-09-12T00:00:00", "count": 1}, {"date": "2025-09-13T00:00:00", "count": 2}, {"date": "2025-09-16T00:00:00", "count": 1}, {"date": "2025-09-17T00:00:00", "count": 1}, {"date": "2025-09-19T00:00:00", "count": 4}, {"date": "2025-09-22T00:00:00", "count": 3}, {"date": "2025-09-23T00:00:00", "count": 4}, {"date": "2025-09-24T00:00:00", "count": 4}, {"date": "2025-09-25T00:00:00", "count": 4}, {"date": "2025-09-27T00:00:00", "count": 1}, {"date": "2025-09-30T00:00:00", "count": 1}, {"date": "2025-10-03T00:00:00", "count": 1}, {"date": "2025-10-06T00:00:00", "count": 1}, {"date": "2025-10-08T00:00:00", "count": 2}, {"date": "2025-10-16T00:00:00", "count": 1}, {"date": "2025-10-17T00:00:00", "count": 2}, {"date": "2025-10-18T00:00:00", "count": 1}, {"date": "2025-10-20T00:00:00", "count": 1}, {"date": "2025-10-23T00:00:00", "count": 29}, {"date": "2025-10-27T00:00:00", "count": 21}, {"date": "2025-10-28T00:00:00", "count": 6}, {"date": "2025-10-29T00:00:00", "count": 2}, {"date": "2025-10-30T00:00:00", "count": 1}, {"date": "2025-10-31T00:00:00", "count": 1}, {"date": "2025-11-01T00:00:00", "count": 1}, {"date": "2025-11-02T00:00:00", "count": 2}, {"date": "2025-11-03T00:00:00", "count": 2}, {"date": "2025-11-04T00:00:00", "count": 1}, {"date": "2025-11-11T00:00:00", "count": 1}, {"date": "2025-11-14T00:00:00", "count": 2}, {"date": "2025-11-17T00:00:00", "count": 1}, {"date": "2025-11-21T00:00:00", "count": 21}, {"date": "2025-11-25T00:00:00", "count": 1}, {"date": "2025-11-28T00:00:00", "count": 2}, {"date": "2025-12-04T00:00:00", "count": 1}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
